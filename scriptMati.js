@@ -125,7 +125,7 @@ function mostrarScroll() {
     let alturaPantalla = document.getElementById('slides').clientHeight;
     for (let i=0; i<animado.length; i++) {
         let alturaAnimado = animado[i].offsetTop;
-        if (alturaAnimado - alturaPantalla - 200 < scrollTop) {
+        if (alturaAnimado - alturaPantalla - 100 < scrollTop) {
             animado[i].style.opacity = 1;
             animado[i].classList.add('mostrar-arriba');
         }
